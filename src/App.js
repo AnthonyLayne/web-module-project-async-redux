@@ -1,10 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import RandomActivityForm from "./components/form";
 
 function App() {
   return (
-    <div className="App">
-      Async Redux Project
+    <div>
+      <h1 className="App"> Activities Randomizer </h1>
+      <div>
+        <RandomActivityForm />
+      </div>
     </div>
   );
 }

@@ -6,9 +6,10 @@ import { Provider } from "react-redux";
 
 import App from "./App";
 import "./index.css";
+import reducer from "./redux/reducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)));
 
 render(
   <React.StrictMode>
