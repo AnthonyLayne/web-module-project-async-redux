@@ -9,4 +9,10 @@ class RandomList extends React.Component {
   }
 }
 
-export default connect(null, {})(RandomList);
+const mapStateToProps = (state) => {
+  return {
+    activity: state.activity,
+  };
+};
+
+export default connect(mapStateToProps)(RandomList);
