@@ -1,6 +1,7 @@
 import React from "react";
 
 import { connect } from "react-redux";
+import "./activity.css";
 
 class RandomList extends React.Component {
   render() {
