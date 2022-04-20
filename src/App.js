@@ -8,8 +8,8 @@ function App() {
     <div>
       <h1 className="App"> Activities Randomizer </h1>
       <div>
-        <RandomActivityForm />
         <RandomList />
+        <RandomActivityForm />
       </div>
     </div>
   );
